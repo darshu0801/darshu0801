@@ -13,6 +13,8 @@
 <a href="https://www.instagram.com/darshu_0801" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="DARSHANBABUKS" height="40" width="40" /></a>
 <a href="https://www.hackerrank.com/darshanbabu44?hr_r=1" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="DARSHANBABUKS" height="30" width="40" /></a>
 </p>
+<a href="https://twitter.com/DARSHANBABUKS1" target="blank"><img align="center" src="https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)" alt="DARSHANBABUKS" height="30" width="40" /></a>
+</p>
 
 ## 🛠 Skills
 Javascript, HTML, CSS...
