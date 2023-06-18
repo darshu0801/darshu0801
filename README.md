@@ -1,7 +1,7 @@
 <h1 align="center">Hello 👋, I'm Darshan</h1>
 <h3 align="center">Talented, detail-oriented student with a disciplined and systematic approach to learning. Enthusiastic about exploring new technologies. Strong analytical and organizational skills. Open to collaboration and transparent in work execution.</h3>
 
-<p align="center">  <img width ="200" height="200" src="https://avatars.githubusercontent.com/u/85753625?s=400&u=c25e49ef40c9211641379a5bd6cf58cd5db3895f&v=4" alt="DARSHANBABUKS"  /> </p>
+<p align="center">  <img width ="250" height="250" src="https://avatars.githubusercontent.com/u/85753625?s=400&u=c25e49ef40c9211641379a5bd6cf58cd5db3895f&v=4" alt="DARSHANBABUKS"  /> </p>
 
 
 <h3 align="center"> Eternal Tech legacy through innovation, learning, and making a lasting impact.!
