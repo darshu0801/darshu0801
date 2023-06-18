@@ -4,17 +4,14 @@
 <p align="center">  <img width ="200" height="200" src="https://avatars.githubusercontent.com/u/85753625?s=400&u=c25e49ef40c9211641379a5bd6cf58cd5db3895f&v=4" alt="DARSHANBABUKS"  /> </p>
 
 
-
-<h3 align="center"> Eternal Tech legacy through innovation, learning, and making a lasting impact.
+<h3 align="center"> Eternal Tech legacy through innovation, learning, and making a lasting impact.!
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.linkedin.com/in/darshanbabuks" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="DARSHANBABUKS" height="40" width="40" /></a>
 <a href="https://www.instagram.com/darshu_0801" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="DARSHANBABUKS" height="40" width="40" /></a>
 <a href="https://www.hackerrank.com/darshanbabu44?hr_r=1" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="DARSHANBABUKS" height="30" width="40" /></a>
-</p>
-<a href="https://twitter.com/DARSHANBABUKS1" target="blank"><img align="center" src="https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)" alt="DARSHANBABUKS" height="30" width="40" /></a>
-</p>
+<a href="https://twitter.com/DARSHANBABUKS1" target="blank"><img align="center" src="https://github.com/darshu0801/darshu0801/assets/85753625/9fc11db2-050a-4744-8514-07d0bdb291d9" alt="DARSHANBABUKS" height="40" width="40" /></a>
 
 ## 🛠 Skills
 Javascript, HTML, CSS...
