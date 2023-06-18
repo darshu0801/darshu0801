@@ -14,7 +14,7 @@
 <a href="https://twitter.com/DARSHANBABUKS1" target="blank"><img align="center" src="https://github.com/darshu0801/darshu0801/assets/85753625/9fc11db2-050a-4744-8514-07d0bdb291d9" alt="DARSHANBABUKS" height="40" width="40" /></a>
 
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Python programming, C Programming, C++ Programming, Internet of Things(IoT), Robotic Operating System(ROS), PCB Designing, MySQL, Verilog Programming, MATLAB, Arduino Programming, Linux, NS2 Network Scripting, Cadence
 
 ## My Git Stats
  [![trophy](https://github-profile-trophy.vercel.app/?username=darshu0801&theme=onedark)](https://github.com/darshu0801/github-profile-trophy)
