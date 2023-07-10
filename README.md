@@ -12,6 +12,7 @@
 <a href="https://www.instagram.com/darshu_0801" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="DARSHANBABUKS" height="40" width="40" /></a>
 <a href="https://www.hackerrank.com/darshanbabu44?hr_r=1" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="DARSHANBABUKS" height="30" width="40" /></a>
 <a href="https://twitter.com/DARSHANBABUKS1" target="blank"><img align="center" src="https://github.com/darshu0801/darshu0801/assets/85753625/9fc11db2-050a-4744-8514-07d0bdb291d9" alt="DARSHANBABUKS" height="40" width="40" /></a>
+<a href="https://www.threads.net/@darshu_0801" target="blank"><img align="center" src="https://github.com/darshu0801/darshu0801/assets/85753625/211bec1f-0c3e-412f-aac0-3d01040609d2" alt="DARSHANBABUKS" height="40" width="30" /></a>
 
 ## 🛠 Skills
 Python programming, C Programming, C++ Programming, Internet of Things(IoT), Robotic Operating System(ROS), PCB Designing, MySQL, Verilog Programming, MATLAB, Arduino Programming, Linux, NS2 Network Scripting, Cadence
