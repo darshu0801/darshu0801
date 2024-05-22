@@ -105,3 +105,65 @@ while frame_idx < frame_count:
 
 cap.release()
 print("Finished extracting frames.")
+
+
+
+
+
+import cv2
+import os
+import pandas as pd
+from collections import defaultdict
+
+# Path to the input video file (ensure this is correct)
+video_path = 'path/to/your/video.mov'
+
+# Directory where you want to save the output Excel file
+output_dir = 'output_frames'
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+# Open the video file
+cap = cv2.VideoCapture(video_path)
+if not cap.isOpened():
+    print("Error: Could not open video.")
+    exit()
+
+fps = cap.get(cv2.CAP_PROP_FPS)
+frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+duration = frame_count / fps
+
+print(f"Video FPS: {fps}")
+print(f"Total Frames: {frame_count}")
+print(f"Duration (seconds): {duration}")
+
+# Dictionary to track the number of frames per second
+frames_per_second = defaultdict(int)
+
+# Extract and save frames with timestamps
+frame_idx = 0
+while frame_idx < frame_count:
+    ret, frame = cap.read()
+    if not ret:
+        break
+    
+    # Calculate the timestamp for the current frame
+    timestamp = frame_idx / fps
+    second = int(timestamp)
+    
+    # Increment the frame count for the current second
+    frames_per_second[second] += 1
+    
+    frame_idx += 1
+
+cap.release()
+print("Finished extracting frames.")
+
+# Convert the dictionary to a DataFrame
+df = pd.DataFrame(list(frames_per_second.items()), columns=['Second', 'Frame Count'])
+
+# Save the DataFrame to an Excel file
+excel_file = os.path.join(output_dir, 'frames_per_second_summary.xlsx')
+df.to_excel(excel_file, index=False)
+
+print(f"Summary of frames per second saved to {excel_file}")
