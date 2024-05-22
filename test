@@ -53,3 +53,55 @@ while second < duration:
 
 cap.release()
 print("Finished extracting frames.")
+
+
+
+
+import cv2
+import os
+
+# Path to the input video file (ensure this is correct)
+video_path = 'path/to/your/video.mov'
+
+# Directory where you want to save the text files
+output_dir = 'output_frames'
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+# Open the video file
+cap = cv2.VideoCapture(video_path)
+if not cap.isOpened():
+    print("Error: Could not open video.")
+    exit()
+
+fps = cap.get(cv2.CAP_PROP_FPS)
+frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+duration = frame_count / fps
+
+print(f"Video FPS: {fps}")
+print(f"Total Frames: {frame_count}")
+print(f"Duration (seconds): {duration}")
+
+# Extract and save frames with timestamps
+frame_idx = 0
+while frame_idx < frame_count:
+    ret, frame = cap.read()
+    if not ret:
+        break
+    
+    # Calculate the timestamp for the current frame
+    timestamp = frame_idx / fps
+
+    # Save frame data to a text file
+    frame_data_file = os.path.join(output_dir, f'frame_{frame_idx}.txt')
+    with open(frame_data_file, 'w') as f:
+        # Save frame number and timestamp
+        f.write(f"Frame Number: {frame_idx}\n")
+        f.write(f"Timestamp: {timestamp:.3f} seconds\n")
+    
+    print(f"Saved frame {frame_idx} at timestamp {timestamp:.3f} seconds to {frame_data_file}")
+    
+    frame_idx += 1
+
+cap.release()
+print("Finished extracting frames.")
