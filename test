@@ -1,0 +1,55 @@
+import cv2
+import os
+
+# Path to the input video file
+video_path = 'path/to/your/video.mp4'
+
+# Directory where you want to save the text files
+output_dir = 'output_frames'
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+# Open the video file
+cap = cv2.VideoCapture(video_path)
+fps = cap.get(cv2.CAP_PROP_FPS)
+frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+duration = frame_count / fps
+
+print(f"Video FPS: {fps}")
+print(f"Total Frames: {frame_count}")
+print(f"Duration (seconds): {duration}")
+
+# Extract and save frames
+second = 0
+while second < duration:
+    # Set the position of the video to the current second
+    cap.set(cv2.CAP_PROP_POS_MSEC, second * 1000)
+    ret, frame = cap.read()
+    if not ret:
+        break
+    
+    # Get the frame number (0-based index)
+    frame_number = int(second * fps)
+    
+    # Save frame data to a text file
+    frame_data_file = os.path.join(output_dir, f'frame_{frame_number}.txt')
+    with open(frame_data_file, 'w') as f:
+        # Save frame dimensions and pixel data
+        height, width, channels = frame.shape
+        f.write(f"Frame: {frame_number}\n")
+        f.write(f"Dimensions: {width}x{height}\n")
+        f.write(f"Channels: {channels}\n")
+        f.write("Pixel Data:\n")
+        
+        # Write pixel values
+        for row in frame:
+            for pixel in row:
+                f.write(f"{pixel.tolist()}\n")
+    
+    print(f"Saved frame {frame_number} to {frame_data_file}")
+    
+    # Move to the next second
+    second += 1
+
+cap.release()
+print("Finished extracting frames.")
