@@ -167,3 +167,26 @@ excel_file = os.path.join(output_dir, 'frames_per_second_summary.xlsx')
 df.to_excel(excel_file, index=False)
 
 print(f"Summary of frames per second saved to {excel_file}")
+
+
+
+
+
+import subprocess
+import xml.etree.ElementTree as ET
+
+# Path to the CrystalDiskInfo CLI executable
+disk_info_exe = "path/to/DiskInfo64.exe"  # Replace with your path
+
+# Run CrystalDiskInfo and output the result in XML format
+result = subprocess.run([disk_info_exe, "/xmlc"], capture_output=True, text=True)
+
+# Parse the XML output
+root = ET.fromstring(result.stdout)
+
+# Extract temperature data
+for disk in root.findall('disk'):
+    model = disk.find('model').text
+    temperature = disk.find('temperature').text
+    print(f"Drive: {model}")
+    print(f"Temperature: {temperature} °C")
